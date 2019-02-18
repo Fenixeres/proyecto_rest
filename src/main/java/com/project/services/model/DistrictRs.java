@@ -8,8 +8,7 @@ import java.util.List;
 
 @Getter
 @Setter
-public class DepartamentoRs {
-
-    @JsonProperty("Departamento")
-    List<DepartamentoModel> departamentoModel;
+public class DistrictRs {
+    @JsonProperty("Distritos")
+    List<DistrictModel> districtModel;
 }

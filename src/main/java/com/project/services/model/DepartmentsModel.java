@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class DepartamentoModel {
+public class DepartmentsModel {
 
     @JsonProperty("Id")
     private String idDepartamento;
