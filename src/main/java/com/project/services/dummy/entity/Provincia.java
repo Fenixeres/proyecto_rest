@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Provincia")
+@Table(name = "PROVINCIA")
 @Entity
 public class Provincia implements Serializable {
 
@@ -18,11 +18,14 @@ public class Provincia implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_provincia")
     private String idProvincia;
 
     private String estado;
 
-    private String nombProvincia;
+    @Column(name = "nombre")
+    private String nombre;
 
+    @Column(name = "id_departamento")
     private String idDepartamento;
 }

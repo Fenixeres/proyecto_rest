@@ -10,7 +10,7 @@ import java.io.Serializable;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Table(name = "Departamento")
+@Table(name = "DEPARTAMENTO")
 @Entity
 public class Departamento implements Serializable {
 
@@ -18,13 +18,13 @@ public class Departamento implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "IdDepartamento")
+    @Column(name = "id_departamento")
     private String idDepartamento;
 
-    @Column(name = "NombDepa")
+    @Column(name = "nombre")
     private String nombDepa;
 
-    @Column(name = "Estado")
+    @Column(name = "estado")
     private String estado;
 
 }

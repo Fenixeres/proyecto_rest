@@ -3,6 +3,7 @@ package com.project.services.dummy.converter;
 import com.project.services.dummy.entity.Departamento;
 import com.project.services.dummy.entity.Distrito;
 import com.project.services.dummy.entity.Provincia;
+
 import com.project.services.dummy.model.DepartmentsModel;
 import com.project.services.dummy.model.DistrictModel;
 import com.project.services.dummy.model.ProvinceModel;
@@ -23,6 +24,7 @@ public class ConverterEntityModel {
                 depModel.setIdDepartamento(departamento.getIdDepartamento());
                 depModel.setNombDepa(departamento.getNombDepa());
                 depModel.setEstado(departamento.getEstado());
+
                 listDepartments.add(depModel);
             }
         }
@@ -36,7 +38,7 @@ public class ConverterEntityModel {
             for (Provincia provincia : listProvincia) {
                 ProvinceModel provinceModel = new ProvinceModel();
                 provinceModel.setIdProvincia(provincia.getIdProvincia());
-                provinceModel.setNombProvincia(provincia.getNombProvincia());
+                provinceModel.setNombProvincia(provincia.getNombre());
                 provinceModel.setEstado(provincia.getEstado());
                 provinceModel.setIdDepartamento(provincia.getIdDepartamento());
 
